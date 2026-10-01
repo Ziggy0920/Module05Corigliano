@@ -1,3 +1,15 @@
+/*
+ * Jonas Corigliano - jbcorigliano@dmacc.edu
+ * CIS171 Thur Afternoon
+ * Date: 10/1/2026
+ * Operating System: Windows 11
+ * IDE: IntelliJ IDEA
+ * Program Description(short): Tests the three methods from the WordLengthAnalyzerCorigliano class
+ * Academic Honesty: I attest that this is my original work.
+ * I have not used unauthorized source code, either modified or unmodified
+ * Documentation of Resources Used:  (AI, websites, YouTube, peers, etc)
+ */
+
 package driver;
 
 import static org.junit.jupiter.api.Assertions.*;
