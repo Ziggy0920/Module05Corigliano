@@ -121,3 +121,10 @@ public class WordLengthAnalyzerCorigliano{
         return avgLength;
     }
 }
+
+/*
+* LONG_WORD_MIN_LENGTH was put inside the main method, as it is only used in there.
+* The constants I put in two of the methods here are specifically inside the method itself because
+* they are not used anywhere else in the program, so having the constants in the methods makes it easier
+* to adjust and find those limits to the ratings.
+*/
