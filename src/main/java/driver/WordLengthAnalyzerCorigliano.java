@@ -48,7 +48,7 @@ public class WordLengthAnalyzerCorigliano{
         for(int i = 0; i < wordCount; i++){
             System.out.print("Enter word " + (i + 1) +": ");
             words[i] = input.nextLine();
-            words[i].replaceAll("\\d", "");
+            words[i] = words[i].replaceAll("[^a-zA-Z]", "");
             totalChars += words[i].length();
             if(words[i].length() > longestWord.length()){
                 longestWord = words[i];
