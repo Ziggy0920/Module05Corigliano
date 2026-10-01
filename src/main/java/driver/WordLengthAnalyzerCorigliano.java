@@ -74,11 +74,16 @@ public class WordLengthAnalyzerCorigliano{
     // determineComplexityLevel - returns the complexity level of submitted words' lengths
     // double -> String
     public static String determineComplexityLevel(double avgWordLength){
-        if(Double.compare(avgWordLength, 4) < 0){
+        final int SIMPLE_LIMIT = 4;
+        final int BASIC_LIMIT = 6;
+        final int INTERMEDIATE_LIMIT = 8;
+
+
+        if(Double.compare(avgWordLength, SIMPLE_LIMIT) < 0){
             return "Simple";
-        } else if(Double.compare(avgWordLength, 6) < 0){
+        } else if(Double.compare(avgWordLength, BASIC_LIMIT) < 0){
             return "Basic";
-        }else if(Double.compare(avgWordLength, 8) < 0){
+        }else if(Double.compare(avgWordLength, INTERMEDIATE_LIMIT) < 0){
             return "Intermediate";
         }else{
             return "Advanced";
@@ -88,13 +93,17 @@ public class WordLengthAnalyzerCorigliano{
     // determineVocabularyRating - determines the vocab rating based on how many long words were submitted
     // int -> String
     public static String determineVocabularyRating(int longWordAmt){
-        if(longWordAmt >= 0 && longWordAmt <= 2){
+        final int LIMITED_LIMIT = 2;
+        final int MODERATE_LIMIT = 5;
+        final int STRONG_LIMIT = 8;
+
+        if(longWordAmt >= 0 && longWordAmt <= LIMITED_LIMIT){
             return "Limited";
-        } else if(longWordAmt >= 3 && longWordAmt <= 5){
+        } else if(longWordAmt >= (LIMITED_LIMIT + 1) && longWordAmt <= MODERATE_LIMIT){
             return "Moderate";
-        } else if(longWordAmt >= 6 && longWordAmt <= 8){
+        } else if(longWordAmt >= (MODERATE_LIMIT + 1) && longWordAmt <= STRONG_LIMIT){
             return "Strong";
-        } else if(longWordAmt > 8){
+        } else if(longWordAmt > STRONG_LIMIT){
             return "Extensive";
         }
         return "Rating not found";
