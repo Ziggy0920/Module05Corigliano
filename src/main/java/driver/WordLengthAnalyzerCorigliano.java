@@ -1,3 +1,16 @@
+/*
+ * Jonas Corigliano - jbcorigliano@dmacc.edu
+ * CIS171 Thur Afternoon
+ * Date: 10/1/2026
+ * Operating System: Windows 11
+ * IDE: IntelliJ IDEA
+ * Program Description(short): Analyzes the word lengths and determines two grades based off the amount of long
+ *                             words and the average number of characters in each word.
+ * Academic Honesty: I attest that this is my original work.
+ * I have not used unauthorized source code, either modified or unmodified
+ * Documentation of Resources Used:  (AI, websites, YouTube, peers, etc)
+ */
+
 package driver;
 import java.util.Scanner;
 
@@ -84,7 +97,7 @@ public class WordLengthAnalyzerCorigliano{
         } else if(longWordAmt > 8){
             return "Extensive";
         }
-        return "Rating not found.";
+        return "Rating not found";
     }
 
     // getAvgWordLength - takes a list of words and calculates the words' average character count
